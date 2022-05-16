@@ -10,8 +10,9 @@
                         <input
                                 type="text"
                                 id="email"
-                                class="form-control" :value="userData.email" 
-                                @input="userData.email = $event.targer.value">
+                                class="form-control" 
+                                v-model="userData.email">
+                               
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -87,7 +88,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-3">
-                        <app-swi-tch-vue v-model="SwiTchVue"></app-swi-tch-vue>
+                        <app-switch-vue v-model="appSwiTchVue"></app-switch-vue>
+
                     </div>
                 </div>
             </div>
@@ -151,7 +153,7 @@
           }
       },
       components: {
-          appSwiTchVue: SwiTchVue
+          appSwitchVue: SwiTchVue
       }
     }
 </script>
