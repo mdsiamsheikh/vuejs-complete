@@ -1,4 +1,4 @@
-# vuejs-complete
+# Vuejs-Complete
 
 ## Project setup
 ```
